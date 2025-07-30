@@ -3,6 +3,7 @@ export default function Banner() {
   return (
     <div className="banner">
       <img src={image1} alt="Banner Clownz" />
+        <p>heheheheheheeh</p>
     </div>
   );
 }
