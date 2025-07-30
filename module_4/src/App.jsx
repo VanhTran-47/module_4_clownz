@@ -1,35 +1,143 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Link } from "react-router-dom";
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import ProductCard from "./components/ProductCard";
+import "./styles/globals.css";
+import Banner from "./components/Banner";
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const sampleArr = [
+    {
+      id: 1,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 2,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 4,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 5,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 6,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 7,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+
+  ]
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header />
+      <Navigation />
+      <Banner />
+      <div className="product-section">
+        <h2 className="section-title">Tất cả sản phẩm</h2>
+        <div className="product-grid">
+          <ProductCard product={sampleArr} />
+        </div>
+        <div className="view-all-button-wrapper">
+          <Link to="/products" className="view-all-button">
+            XEM TẤT CẢ SẢN PHẨM
+          </Link>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
