@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import Header from "./components/Header";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import ProductCard from "./components/ProductCard";
+import Header from "./components/layout/Header";
+import Navigation from "./components/layout/Navigation";
+import Footer from "./components/layout/Footer";
+import ProductCard from "./components/layout/ProductCard";
 import "./styles/globals.css";
-import Banner from "./components/Banner";
+import Banner from "./components/layout/Banner";
 
 function App() {
 
