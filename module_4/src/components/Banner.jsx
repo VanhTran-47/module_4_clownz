@@ -5,6 +5,7 @@ export default function Banner() {
       <img src={image1} alt="Banner Clownz" />
         <p>heheheheheheeh</p>
         <p>hahahahahahah</p>
+
     </div>
   );
 }
