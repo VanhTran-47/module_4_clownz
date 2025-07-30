@@ -3,6 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaUser, FaShoppingCart, FaSearch } from "re
 export default function Header() {
   return (
     <div className="topbar">
+      <h1>Hello anh em codegym mãi đỉnh !!!!</h1>
       <div className="topbar-left">
         <span className="info-group">
         <FaMapMarkerAlt className="icon" />
