@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import ProductCard from "./components/ProductCard";
 import "./styles/globals.css";
 import Banner from "./components/Banner";
+import Products from './pages/products';
+
 
 function App() {
 
@@ -79,42 +81,6 @@ function App() {
       category: "T-Shirt",
       price: "320,000 VNĐ"
     },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-
   ]
 
 
@@ -129,7 +95,7 @@ function App() {
           <ProductCard product={sampleArr} />
         </div>
         <div className="view-all-button-wrapper">
-          <Link to="/products" className="view-all-button">
+          <Link to="/products" className="view-all-button" onClick={() => window.scrollTo(0, 0)}>
             XEM TẤT CẢ SẢN PHẨM
           </Link>
         </div>

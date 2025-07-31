@@ -144,6 +144,11 @@ html, body {
   width: 100%;
 }
 
+.nav-link.active {
+  color: #d5281b;
+  font-weight: bold;
+}
+
 /* BANNER */
 .banner {
   width: 100%;
@@ -168,7 +173,7 @@ html, body {
   font-size: 28px;
   font-weight: bold;
   text-align: center;
-  margin: 0 0 28px;
+  margin: 40px 0 28px;
   color: #000;
 }
 

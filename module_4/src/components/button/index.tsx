@@ -4,7 +4,7 @@ export const ButtonRed = () => {
     }
     return (
         <>
-          <button style={} className={className}>{text}</button>
+          <button className="product-button">Thêm vào giỏ hàng</button>
         </>
     )
 }

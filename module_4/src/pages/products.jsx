@@ -1,10 +1,12 @@
-import React from "react";
+
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
+import Footer from "../components/Footer";
+import '../styles/globals.css';
 
- const Data = [
+
+ const sampleArr = [
     {
       id: 1,
       image: "/images/product-01.png",
@@ -50,9 +52,9 @@ import ProductCard from "../components/ProductCard";
     {
       id: 7,
       image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
+      name: "Mũ LZ Cap",
+      category: "Caps",
+      price: "220,000 VNĐ"
     },
     {
       id: 7,
@@ -85,9 +87,9 @@ import ProductCard from "../components/ProductCard";
     {
       id: 7,
       image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
+      name: "Hoodie Clownz",
+      category: "Hoodie",
+      price: "20,000 VNĐ"
     },
     {
       id: 7,
@@ -111,7 +113,7 @@ import ProductCard from "../components/ProductCard";
       price: "320,000 VNĐ"
     },
 
-  ] 
+  ];
 
 export default function Products() {
   return (
@@ -120,7 +122,26 @@ export default function Products() {
       <Navigation />
       <div className="product-section">
         <h2 className="section-title">Tất cả sản phẩm</h2>
-        <ProductCard product={Data} />
+      <div className="flex items-center mb-4">
+  <span className="text-black font-semibold tracking-widest uppercase text-sm">DANH MỤC</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    color="#111111"
+    width="24"
+    height="24"
+    fill="none"
+    viewBox="0 2 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    className="ml-[4px] inline-block transform translate-x-[4px]"
+
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+</div>
+        <div className="product-grid">
+          <ProductCard product={sampleArr} />
+        </div>
       </div>
       <Footer />
     </>
