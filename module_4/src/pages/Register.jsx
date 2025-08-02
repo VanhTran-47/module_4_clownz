@@ -3,9 +3,10 @@ import {useNavigate, Link} from 'react-router-dom';
 import axios from 'axios';
 import {FaEye, FaEyeSlash} from 'react-icons/fa';
 import {Button, Form, Alert} from 'react-bootstrap';
-import Header from "../components/Header";
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Header from "../components/layout/Header";
+import Navigation from "../components/layout/Navigation";
+import Footer from "../components/layout/Footer";
+import "../pages/Register.css";
 
 function RegisterPage() {
     const [formData, setFormData] = useState({

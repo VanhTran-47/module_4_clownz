@@ -1,8 +1,7 @@
-
-import Header from "../components/Header";
-import Navigation from "../components/Navigation";
-import ProductCard from "../components/ProductCard";
-import Footer from "../components/Footer";
+import Header from "../components/layout/Header";
+import Navigation from "../components/layout/Navigation";
+import ProductCard from "../components/layout/ProductCard";
+import Footer from "../components/layout/Footer";
 import '../styles/globals.css';
 
 
