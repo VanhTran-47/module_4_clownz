@@ -26,6 +26,13 @@ function App() {
       price: "320,000 VNĐ"
     },
     {
+      id: 3,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
       id: 4,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
@@ -54,28 +61,21 @@ function App() {
       price: "320,000 VNĐ"
     },
     {
-      id: 7,
+      id: 8,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
       category: "T-Shirt",
       price: "320,000 VNĐ"
     },
     {
-      id: 7,
+      id: 9,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
       category: "T-Shirt",
       price: "320,000 VNĐ"
     },
     {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
+      id: 10,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
       category: "T-Shirt",

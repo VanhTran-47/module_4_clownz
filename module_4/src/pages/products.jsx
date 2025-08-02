@@ -121,7 +121,7 @@ export default function Products() {
       <Header />
       <Navigation />
       <div className="product-section">
-        <h2 className="section-title">Tất cả sản phẩm</h2>
+        <h2 className="products-title">Tất cả sản phẩm</h2>
       <div className="flex items-center mb-4">
   <span className="text-black font-semibold tracking-widest uppercase text-sm">DANH MỤC</span>
   <svg
