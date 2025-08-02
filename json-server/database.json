@@ -1,0 +1,94 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Quản trị viên",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2023-05-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Người dùng thường",
+      "email": "user@example.com",
+      "password": "user123",
+      "role": "user",
+      "createdAt": "2023-05-02T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "username": "ada",
+      "email": "tranducduong2k4@gmail.com",
+      "role": "User",
+      "createdAt": "2025-07-28T14:27:20.739Z"
+    },
+    {
+      "id": "4",
+      "name": "Nguyễn Văn Anh",
+      "email": "admin@gmail.com",
+      "phone": "0987654321",
+      "password": "123456",
+      "role": "user",
+      "createdAt": "2023-05-07T10:30:00Z"
+    },
+    {
+      "id": "2445",
+      "name": "Duong Tran",
+      "email": "tranducduong2k14@gmail.com",
+      "phone": "0387542417",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "role": "user",
+      "createdAt": "2025-07-30T11:59:38.057Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Áo thun",
+      "description": "Các loại áo thun cơ bản",
+      "createdAt": "2023-05-03T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Quần jeans",
+      "description": "Quần jeans các loại",
+      "createdAt": "2023-05-04T00:00:00Z"
+    },
+    {
+      "id": null,
+      "name": "haha",
+      "description": "ádasdas",
+      "createdAt": "2025-07-28T14:26:39.590Z"
+    },
+    {
+      "id": null,
+      "name": "Duong Tran",
+      "description": "ádasdsd",
+      "createdAt": "2025-07-28T14:29:36.175Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Áo thun trắng",
+      "price": 150000,
+      "categoryId": 1,
+      "stock": 50,
+      "description": "Áo thun cotton 100%",
+      "image": "/images/ao-thun-trang.jpg",
+      "createdAt": "2023-05-05T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Quần jeans đen",
+      "price": 350000,
+      "categoryId": 2,
+      "stock": 30,
+      "description": "Quần jeans slim fit",
+      "image": "/images/quan-jeans-den.jpg",
+      "createdAt": "2023-05-06T00:00:00Z"
+    }
+  ]
+}

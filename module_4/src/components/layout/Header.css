@@ -1,0 +1,143 @@
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .topbar {
+    padding: 12px 16px;
+  }
+
+  .topbar-left {
+    gap: 16px;
+  }
+
+  .topbar-right {
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .icon,
+  .account-icon,
+  .cart-icon {
+    font-size: 16px;
+  }
+
+  .hide-on-small {
+    display: none !important;
+  }
+
+  .hide-label-on-small span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 12px;
+  }
+
+  .topbar-left {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+    font-size: 28px;
+    text-align: left;
+  }
+
+  .topbar-right {
+    gap: 12px;
+    margin-left: auto;
+  }
+
+  .icon,
+  .account-icon,
+  .cart-icon {
+    font-size: 16px;
+  }
+
+  .cart-text,
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .hide-label-on-small span {
+    display: none;
+  }
+}
+
+.account-menu {
+  position: relative;
+}
+
+.account-link {
+  align-items: center;
+  color: white;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* Ẩn menu dropdown mặc định */
+.dropdown-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #111;
+  border-radius: 4px;
+  width: 180px;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.account-menu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 !important
+}
+
+.dropdown-item:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 1023px) {
+  .hide-on-small {
+    display: none !important;
+  }
+
+  .hide-label-on-small span {
+    display: none;
+  }
+
+  .topbar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    text-align: left;
+    margin-left: 0;
+  }
+}

@@ -5,6 +5,7 @@ import Footer from "./components/layout/Footer";
 import ProductCard from "./components/layout/ProductCard";
 import "./styles/globals.css";
 import Banner from "./components/layout/Banner";
+import Products from './pages/products';
 
 function App() {
 
@@ -18,6 +19,13 @@ function App() {
     },
     {
       id: 2,
+      image: "/images/product-01.png",
+      name: "Áo Thun Clownz",
+      category: "T-Shirt",
+      price: "320,000 VNĐ"
+    },
+    {
+      id: 3,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
       category: "T-Shirt",
@@ -52,69 +60,26 @@ function App() {
       price: "320,000 VNĐ"
     },
     {
-      id: 7,
+      id: 8,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
       category: "T-Shirt",
       price: "320,000 VNĐ"
     },
     {
-      id: 7,
+      id: 9,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
       category: "T-Shirt",
       price: "320,000 VNĐ"
     },
     {
-      id: 7,
+      id: 10,
       image: "/images/product-01.png",
       name: "Áo Thun Clownz",
       category: "T-Shirt",
       price: "320,000 VNĐ"
     },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-    {
-      id: 7,
-      image: "/images/product-01.png",
-      name: "Áo Thun Clownz",
-      category: "T-Shirt",
-      price: "320,000 VNĐ"
-    },
-
   ]
 
 
@@ -129,7 +94,7 @@ function App() {
           <ProductCard product={sampleArr} />
         </div>
         <div className="view-all-button-wrapper">
-          <Link to="/products" className="view-all-button">
+          <Link to="/products" className="view-all-button" onClick={() => window.scrollTo(0, 0)}>
             XEM TẤT CẢ SẢN PHẨM
           </Link>
         </div>
