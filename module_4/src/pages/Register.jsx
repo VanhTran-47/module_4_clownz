@@ -65,14 +65,14 @@ function RegisterPage() {
         }
 
         try {
-            const res = await axios.get('http://localhost:5000/users');
+            const res = await axios.get('http://localhost:8000/users');
             if (res.data.some(user => user.email === formData.email)) {
                 setError('Email đã được đăng ký');
                 setLoading(false);
                 return;
             }
 
-            await axios.post('http://localhost:5000/users', {
+            await axios.post('http://localhost:8000/users', {
                 ...formData,
                 role: 'user',
                 createdAt: new Date().toISOString()
