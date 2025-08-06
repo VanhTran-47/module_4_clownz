@@ -16,7 +16,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* HEADER - TOPBAR */
 .topbar {
   position: fixed;
   top: 0;
@@ -96,7 +95,6 @@ html, body {
   align-items: center;
 }
 
-/* NAVIGATION */
 .nav {
   width: 100%;
   background-color: white;
@@ -149,7 +147,6 @@ html, body {
   font-weight: bold;
 }
 
-/* BANNER */
 .banner {
   width: 100%;
   height: auto;
@@ -163,7 +160,6 @@ html, body {
   display: block;
 }
 
-/* MAIN CONTENT - PRODUCT SECTION */
 .product-section {
   width: 100%;
   padding: 80px 60px;
@@ -244,6 +240,7 @@ html, body {
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-block;
+  text-decoration: none;
 }
 
 .product-button:hover {
@@ -330,7 +327,7 @@ html, body {
 
 .newsletter-form {
   display: flex;
-  flex-direction: column; /* CHỈNH Ở ĐÂY */
+  flex-direction: column; 
   gap: 10px;
   margin-top: 12px;
 }

@@ -22,7 +22,7 @@ function LoginPage() {
         setError('');
 
         try {
-            const res = await axios.get('http://localhost:5000/users');
+            const res = await axios.get('http://localhost:8000/users');
             const user = res.data.find(u => u.email === email && u.password === password);
 
             if (user) {
@@ -32,7 +32,7 @@ function LoginPage() {
                     email: user.email,
                     role: user.role
                 }));
-                navigate('/admin');
+                navigate('/');
             } else {
                 setError('Email hoặc mật khẩu không đúng');
             }

@@ -118,6 +118,11 @@
   background-color: #333;
 }
 
+.topbar .cart-item.hide-label-on-small {
+  background-color: transparent !important;
+}
+
+
 @media screen and (max-width: 1023px) {
   .hide-on-small {
     display: none !important;

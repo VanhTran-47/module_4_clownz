@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function ProductCard({ product }) {
   console.log(product)
@@ -11,12 +12,18 @@ export default function ProductCard({ product }) {
       product.map((item, index) => (
         <div className="product-card">
           <div key={index}>
+            <a href="/detail">
             <img src={item.image} alt={item.name} />
+          </a>
             <div className="product-info">
               <h5 className="product-name">{item.name}</h5>
               <p className="product-category">{item.category}</p>
               <p className="product-price">{item.price}</p>
-              <button className="product-button">Thêm vào giỏ hàng</button>
+              <Link to="/itemcart" className="product-button">
+  THÊM VÀO GIỎ HÀNG
+</Link>
+
+
             </div>
           </div>
         </div>

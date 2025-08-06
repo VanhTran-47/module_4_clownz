@@ -1,0 +1,168 @@
+.payment-page {
+  display: flex;
+  gap: 40px;
+  padding: 120px 100px 80px;
+  background-color: #f2f2f2;
+  color: #222;
+  align-items: flex-start;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+form {
+  flex: 2;
+  background: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.order-summary {
+  flex: 1;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-summary h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.checkout-button {
+  background: #000;
+  color: #fff;
+  padding: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.summary-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.summary-left img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+.summary-left .name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.summary-left .quantity {
+  font-size: 13px;
+  color: #666;
+}
+
+.summary-price {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.summary-total.final {
+  font-weight: bold;
+  font-size: 17px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.total-price {
+  color: #e4002b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222222;
+  z-index: 999;
+}
+
+.popup {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .payment-page {
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+
+  form,
+  .order-summary {
+    width: 100%;
+  }
+}

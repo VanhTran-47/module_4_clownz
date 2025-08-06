@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+      "id": "4",
+      "name": "Nguyễn Văn Anh",
+      "email": "admin@gmail.com",
+      "phone": "0987654321",
+      "password": "123456",
+      "role": "admin",
+      "createdAt": "2023-05-07T10:30:00Z"
+    },
+    {
+      "id": "2445",
+      "name": "Duong Tran",
+      "email": "tranducduong2k14@gmail.com",
+      "phone": "0387542417",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "role": "user",
+      "createdAt": "2025-07-30T11:59:38.057Z"
+    },
+    {
+      "id": "1044",
+      "name": "Việt Anh Trần",
+      "email": "anhtranviet677@gmail.com",
+      "phone": "0946712526",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "role": "admin",
+      "createdAt": "2025-08-06T12:10:36.545Z"
+    },
+    {
+      "id": null,
+      "username": "Duong",
+      "email": "Duong123@gmail.com",
+      "role": "User",
+      "password": "Duong123",
+      "createdAt": "2025-08-06T12:55:26.850Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Áo thun",
+      "description": "Các loại áo thun cơ bản",
+      "createdAt": "2023-05-03T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Quần jeans",
+      "description": "Quần jeans các loại",
+      "createdAt": "2023-05-04T00:00:00Z"
+    },
+    {
+      "id": "07e2",
+      "name": "Áo phông",
+      "description": "123",
+      "createdAt": "2025-08-06T11:37:51.944Z"
+    },
+    {
+      "id": null,
+      "name": "Tất",
+      "description": "mùa đông",
+      "createdAt": "2025-08-06T12:56:44.698Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Áo thun trắng",
+      "price": 150000,
+      "categoryId": 1,
+      "stock": 50,
+      "description": "Áo thun cotton 100%",
+      "image": "/images/ao-thun-trang.jpg",
+      "createdAt": "2023-05-05T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Quần jeans đen",
+      "price": 350000,
+      "categoryId": 2,
+      "stock": 30,
+      "description": "Quần jeans slim fit",
+      "image": "",
+      "createdAt": "2023-05-06T00:00:00Z"
+    },
+    {
+      "id": null,
+      "name": "basic tee",
+      "price": "120000",
+      "category": "Áo thun",
+      "stock": "12",
+      "createdAt": "2025-08-04T12:35:24.775Z"
+    },
+    {
+      "id": null,
+      "name": "abc",
+      "price": "10000",
+      "category": "Tất",
+      "stock": "100",
+      "createdAt": "2025-08-06T12:57:17.974Z"
+    },
+    {
+      "id": null,
+      "name": "Áo khoác",
+      "price": "100000",
+      "category": "Tất",
+      "stock": 0,
+      "createdAt": "2025-08-06T13:02:41.205Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1001",
+      "userId": "2445",
+      "customerName": "Duong Tran",
+      "customerEmail": "tranducduong2k14@gmail.com",
+      "customerPhone": "0387542417",
+      "shippingAddress": "123 Đường ABC, Quận 1, TP.HCM",
+      "orderDate": "2025-08-01T09:15:00Z",
+      "totalAmount": 620000,
+      "status": "pending",
+      "paymentMethod": "COD",
+      "paymentStatus": "unpaid",
+      "items": [
+        {
+          "productId": "1",
+          "name": "Áo thun trắng",
+          "price": 150000,
+          "quantity": 2,
+          "image": "/images/ao-thun-trang.jpg"
+        },
+        {
+          "productId": "2",
+          "name": "Quần jeans đen",
+          "price": 350000,
+          "quantity": 1,
+          "image": ""
+        }
+      ],
+      "notes": "Giao hàng giờ hành chính",
+      "createdAt": "2025-08-01T09:15:00Z",
+      "updatedAt": "2025-08-01T09:15:00Z"
+    },
+    {
+      "id": "1002",
+      "userId": "2445",
+      "customerName": "Duong Tran",
+      "customerEmail": "tranducduong2k14@gmail.com",
+      "customerPhone": "0387542417",
+      "shippingAddress": "123 Đường ABC, Quận 1, TP.HCM",
+      "orderDate": "2025-07-28T14:30:00Z",
+      "totalAmount": 350000,
+      "status": "completed",
+      "paymentMethod": "Momo",
+      "paymentStatus": "paid",
+      "items": [
+        {
+          "productId": "2",
+          "name": "Quần jeans đen",
+          "price": 350000,
+          "quantity": 1,
+          "image": ""
+        }
+      ],
+      "notes": "",
+      "createdAt": "2025-07-28T14:30:00Z",
+      "updatedAt": "2025-07-30T10:20:00Z"
+    },
+    {
+      "id": "1003",
+      "userId": "4",
+      "customerName": "Nguyễn Văn Anh",
+      "customerEmail": "admin@gmail.com",
+      "customerPhone": "0987654321",
+      "shippingAddress": "456 Đường XYZ, Quận 3, TP.HCM",
+      "orderDate": "2025-08-03T11:45:00Z",
+      "totalAmount": 300000,
+      "status": "processing",
+      "paymentMethod": "Bank Transfer",
+      "paymentStatus": "paid",
+      "items": [
+        {
+          "productId": "1",
+          "name": "Áo thun trắng",
+          "price": 150000,
+          "quantity": 2,
+          "image": "/images/ao-thun-trang.jpg"
+        }
+      ],
+      "notes": "Liên hệ trước khi giao",
+      "createdAt": "2025-08-03T11:45:00Z",
+      "updatedAt": "2025-08-03T11:45:00Z"
+    }
+  ]
+}

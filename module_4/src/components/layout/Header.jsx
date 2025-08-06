@@ -45,7 +45,7 @@ export default function Header() {
     <span className="cart-text">TÀI KHOẢN</span>
   </div>
   <div className="dropdown-menu">
-    <Link to="/admin" className="dropdown-item">Admin</Link>
+    {/* <Link to="/admin" className="dropdown-item">Admin</Link> */}
     <Link to="/login" className="dropdown-item">Đăng nhập / Đăng ký</Link>
   </div>
 </div>

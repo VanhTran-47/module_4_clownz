@@ -5,7 +5,6 @@ import Footer from "./components/layout/Footer";
 import ProductCard from "./components/layout/ProductCard";
 import "./styles/globals.css";
 import Banner from "./components/layout/Banner";
-import Products from './pages/products';
 
 function App() {
 
